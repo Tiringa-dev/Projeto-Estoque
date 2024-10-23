@@ -9,6 +9,8 @@ public class Produto {
     double valor;
     int quantidade;
 
+    public Produto() {
+    }
 
     public Produto(String nome, String marca, String composicao, int codigoInterno, double valor, int quantidade){
         this.nome = nome;
@@ -69,4 +71,6 @@ public class Produto {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
+
+
 }
