@@ -1,6 +1,6 @@
 package Entidades;
 
-public interface primeirainterface {
-    void produtos();
-    
+public interface imposto {
+    double calucularImposto();
+
 }

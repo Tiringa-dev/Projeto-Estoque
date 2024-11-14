@@ -14,9 +14,11 @@ public abstract class Produto_Abstrato {
     public String getNome() {
         return nome;
     }
+
     public String getCodigo() {
         return codigo;
     }
+
     public double getPreco() {
         return preco;
     }
@@ -26,11 +28,7 @@ public abstract class Produto_Abstrato {
         return "nome do produto: " + nome + "codigo: " + codigo + "R$: " + preco;
     }
 
-
-    public abstract double caulcularImposto();
-    public double calcularImposto() {
-        return getPreco() * 0.20;
-    }
+    public abstract double calcularImposto();
 }
 
 

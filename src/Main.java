@@ -1,5 +1,7 @@
 import Entidades.Cadastropf;
 import Entidades.Cadastropj;
+import Entidades.ProdutoReal;
+import Entidades.Produto_Abstrato;
 
 import java.util.Scanner;
 
@@ -12,5 +14,15 @@ public class Main {
 
         System.out.println(user1);
         System.out.println(user2);
+
+        System.out.println("---------------------------------------");
+
+        Produto_Abstrato estoque = new ProdutoReal("Garrafa Térmica", "001", 25.00);
+        {
+            System.out.println("Nome: " + estoque.getNome());
+            System.out.println("Código: " + estoque.getCodigo());
+            System.out.println("Preço: R$ " + estoque.getPreco());
+            System.out.println("Imposto: R$ " + ((ProdutoReal) estoque).calcularImposto());
+        }
     }
 }
