@@ -9,7 +9,7 @@ public class Produto {
     double valor;
     int quantidade;
 
-    public Produto() {
+    public Produto(int i) {
     }
 
     public Produto(String nome, String marca, String composicao, int codigoInterno, double valor, int quantidade){
@@ -72,5 +72,14 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
-
+    @Override
+    public String toString() {
+        return "Produto :\n" +
+                "  Nome: '" + nome + "'\n" +
+                "  Marca: '" + marca + "'\n" +
+                "  Composição: '" + composicao + "'\n" +
+                "  Código Interno: " + codigoInterno + "\n" +
+                "  Valor: R$ " + String.format("%.2f", valor) + "\n" +
+                "  Quantidade: " + quantidade + "\n";
+    }
 }
